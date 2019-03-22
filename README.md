@@ -1,3 +1,10 @@
+---
+layout: default
+description: blah blah
+title: home
+id: home
+---
+
 # Welcome to my personal page
 
 # Research
