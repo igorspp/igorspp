@@ -12,6 +12,10 @@ img {
   height: auto;
 }
 
-.photo-grid img:hover {
-  opacity: 0.8;
+.phot-grid {
+  
+}
+
+.hover-opacity:hover {
+  opacity: 0.6;
 }
