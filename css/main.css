@@ -5,3 +5,8 @@ body {
 div.container img:hover {
      opacity:0.8;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
