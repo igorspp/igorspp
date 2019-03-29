@@ -20,7 +20,13 @@ img {
 }
 
 
-.w3-row-padding{padding:0 8px}
-.w3-third{float:left;width:100%}
+.picture-menu{
+
+}
+
+.w3-third{
+  float: left;
+  width: 100%;
+  padding: 0px}
 .w3-margin-bottom{margin-bottom:16px!important}
 @media (min-width:601px){.w3-third{width:33.33333%}}
