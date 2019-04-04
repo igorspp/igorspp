@@ -1,164 +1,223 @@
 body {
-  font-family: "Raleway", sans-serif;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  color: #555555
+  font-family: "Lora", serif;
+  font-weight: 400;
+  margin: 0px;
+  color: #FFFFFF;
+  text-align: justify;
+  line-height: 1.3
 }
 
-b {
-  color: green
+.title {
+  color: #000000
 }
 
-h2 {
-  padding-top: 25px
+
+/* DIVs */
+
+div.header {
+  background-image: url("https://pbs.twimg.com/profile_banners/778878774888763392/1474970834/1500x500");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-a, a:active, a:visited{
-  color: #4CAF50
+div.menu-wrapper, div.social-wrapper, div.title-wrapper, div.about-wrapper,
+div.research-wrapper, div.publications-wrapper, div.contact-wrapper, div.footer-wrapper {
+  width: 100%
 }
 
-a:hover {
-  color: #999999
+div.menu-wrapper {
+  background-color: #3E3936;
 }
 
-i.fab, i.ai {
-  color: #4CAF50
+div.menu {
+  overflow: hidden;
+  display: table;
+  align-items: center;
+  margin: 0px auto;
 }
 
-i.fab:hover, i.ai:hover {
-  opacity: 0.7;
-  color: #555555;
+div.social-wrapper {
+  background-color: #3E3936;
 }
+
+div.social {
+  display: table;
+  align-items: center;
+  margin: 0px auto;
+  font-size: 2em
+}
+
+div.title-wrapper {
+  background-color: #FFFFFF;
+}
+
+div.about-wrapper {
+  background-color: #646B79;
+}
+
+div.research-wrapper {
+  background-color: #494950;
+}
+
+div.publications-wrapper {
+  background-color: #989DA4;
+}
+
+div.contact-wrapper {
+  background-color: #646B79;
+}
+
+div.footer-wrapper {
+  background-color: #3E3936;
+}
+
+div.title, div.about, div.research, div.publications, div.contact, div.footer {
+  margin: 0px auto;
+  max-width: 1000px;
+  padding: 25px 20px;
+  overflow: hidden;
+}
+
+div.title {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center
+}
+
+div.title-cell {
+  float: left;
+  padding: 0px 10px;
+  width: 300px
+}
+
+div.contact-menu {
+  width: 33.3333%;
+  float: left;
+  text-align: center
+}
+
+
+/* HEADERS */
+
+.header h1 {
+  margin: 0px;
+  font-size: 3em;
+  font-style: italic;
+  font-weight: 400;
+  color: white;
+}
+
+.header h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: white;
+}
+
+.title h2, .about h2, .research h2, .publications h2, .contact h2 {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+
+
+/* LINKS */
+
+a:link, a:visited{
+  color: #644C44;
+  text-decoration: none;
+}
+
+a:hover, a:active{
+  text-decoration: underline;
+}
+
+.menu a:link, .menu a:visited {
+  float: left;
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none
+}
+
+.menu a:hover, .menu a:active {
+  background-color: #646B79
+}
+
+.title a:link, .title a:visited{
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #000000;
+  padding: 10px 20px;
+  border: 1px solid #000000;
+}
+
+.title a:hover, .title a:active{
+  color: #646B79;
+  border: 1px solid #646B79;
+}
+
+
+/* ICONS */
 
 i.fas {
   margin-right: 10px
 }
 
-.content {
-  margin-left: 200px;
-  padding: 1px 20px;
-  height: 100%;
-  background-color: #f1f1f1;
-}
-
-.contact-wrapper {
-  margin-left: 200px;
-  padding: 1px 20px 20px 20px;
-  color: #FFFFFF;
-  background-color :#9e9e9e;
-  height:100%;
-  overflow: hidden;
-}
-
-.contact-menu-wrapper {
-  style="margin: 0px; width: 100%"
-}
-
-.contact-menu {
-  width: 33.3333%;
-  float: left;
-  padding-top: 0px;
-  padding-bottom: 5px;
-  text-align: center;
-  margin-bottom: 0px;
-  margin-top: 15px
-}
-
-.footer {
-  margin-left: 200px;
-  padding: 1px 20px;
-  color: #EEEEEE;
-  background-color: #555555;
-  text-align: right
-}
-
-/* SIDEBAR */
-
-.sidebar {
-  margin-top: 20px;
-  width: 200px;
-  height: 100%;
-  position: fixed;
-  overflow: auto;
-}
-
-.avatar {
-  text-align: center;
-  margin-bottom: 20px
-}
-
-.sidebar-menu a {
-  display: block;
-  color: #555555;
-  padding: 15px;
-  text-decoration: none;
-}
-
-.sidebar-menu a.active {
-  color: #4CAF50;
-  font-style: bold;
-}
-
-.sidebar-menu a:hover {
-  background-color: #4CAF50;
+i.fab, i.ai {
   color: white;
+  padding: 10px 5px;
 }
 
-.twitter-rg {
-  text-align: left;
-  padding: 15px;
-  font-size: 2.5em
+i.fab:hover, i.ai:hover {
+  color: #646B79;
 }
+
 
 /* RESPONSIVE DESIGN */
 
-@media screen and (max-width: 700px) {
-  body {
-    margin: 0px
+@media screen and (max-width: 750px) {
+  div.header {
+    height: 200px
   }
 
-  .content {
-    margin-left: 0px;
+  div.menu {
+    position: relative;
+    width: 100%
   }
 
-  .footer {
-    margin-left: 0px;
+  div.title, div.about, div.research, div.publications, div.contact, div.footer {
+    padding: 20px 10px
   }
 
-  .contact-wrapper {
-    margin-left: 0px;
+  div.title {
+    flex-direction: column;
   }
 
-  .sidebar {
-    margin-top: 5px;
-    width: 100%;
-    height: auto;
-    position: relative
+  div.title-cell{
+    margin: 0px auto
   }
 
-  .avatar {
-    margin-bottom: 5px
-  }
-
-  .sidebar-menu a {
-    padding: 10px;
-    text-align: center
-  }
-
-  .twitter-rg {
-    text-align: center;
-    padding: 5px;
-    font-size: 2em
+  .menu a:link {
+    float: none;
+    text-align: left;
+    padding: 12px
   }
 }
 
 @media screen and (max-width: 850px) {
-  .contact-menu {
-    width: 100%;
-    height: auto;
-    position: relative;
-    margin-top: 0px
+  div.contact-menu {
+    width: 100%
   }
 }
