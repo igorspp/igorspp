@@ -1,14 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lora", serif;
   font-weight: 400;
   margin: 0px;
-  color: #FFFFFF;
+  color: #3E3936;
   text-align: justify;
   line-height: 1.3
 }
 
-.title {
-  color: #000000
+.contact, .footer {
+  color: #FFFFFF
 }
 
 
@@ -56,22 +60,6 @@ div.social {
   font-size: 2em
 }
 
-div.title-wrapper {
-  background-color: #FFFFFF;
-}
-
-div.about-wrapper {
-  background-color: #646B79;
-}
-
-div.research-wrapper {
-  background-color: #494950;
-}
-
-div.publications-wrapper {
-  background-color: #989DA4;
-}
-
 div.contact-wrapper {
   background-color: #646B79;
 }
@@ -83,12 +71,11 @@ div.footer-wrapper {
 div.title, div.about, div.research, div.publications, div.contact, div.footer {
   margin: 0px auto;
   max-width: 1000px;
-  padding: 25px 20px;
+  padding: 50px 20px;
   overflow: hidden;
 }
 
 div.title {
-  padding: 50px 20px;
   display: flex;
   justify-content: center
 }
@@ -126,16 +113,20 @@ div.contact-menu {
 .title h2, .about h2, .research h2, .publications h2, .contact h2 {
   margin: 0px;
   font-family: "Montserrat", sans-serif;
-
+  color: #646B79
 }
 
+.contact h2 {
+  color: #FFFFFF!important
+}
 
 
 /* LINKS */
 
 a:link, a:visited{
-  color: #644C44;
+  color: #646B79;
   text-decoration: none;
+  font-weight: 700
 }
 
 a:hover, a:active{
@@ -148,7 +139,8 @@ a:hover, a:active{
   padding: 15px 25px;
   color: white;
   font-family: "Montserrat", sans-serif;
-  text-decoration: none
+  text-decoration: none;
+  font-weight: 400
 }
 
 .menu a:hover, .menu a:active {
@@ -158,14 +150,14 @@ a:hover, a:active{
 a.button:link, a.button:visited{
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
-  color: #000000;
+  background-color: #646B79;
+  color: #FFFFFF;
   padding: 10px 20px;
-  border: 1px solid #000000;
+  font-weight: 400
 }
 
-a.button:hover, a.button:active{
-  color: #646B79;
-  border: 1px solid #646B79;
+a.button:hover, a.button:active {
+  opacity: 0.7
 }
 
 
