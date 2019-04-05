@@ -209,25 +209,13 @@ div.footer {
 
 
 
+/* LEFTOVERS */
 
 div.contact-menu {
   width: 33.3333%;
   float: left;
   text-align: center
 }
-
-
-
-
-
-/* RESPONSIVE DESIGN */
-
-
-
-
-
-
-
 
 @media screen and (max-width: 850px) {
   div.contact-menu {
