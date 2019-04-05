@@ -1,3 +1,5 @@
+/* General settings */
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,80 +13,134 @@ body {
   line-height: 1.3
 }
 
-.contact, .footer {
-  color: #FFFFFF
-}
 
-
-/* DIVs */
+/* Header settings */
 
 div.header {
   background-image: url("https://pbs.twimg.com/profile_banners/778878774888763392/1474970834/1500x500");
   background-position: center;
   background-size: cover;
   height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: column
 }
 
-div.menu-wrapper, div.social-wrapper, div.title-wrapper, div.about-wrapper,
-div.research-wrapper, div.publications-wrapper, div.contact-wrapper, div.footer-wrapper, div.blog-wrapper {
-  width: 100%
+@media screen and (max-width: 750px) {
+  div.header {
+    height: 200px
+  }
 }
+
+
+/* Menu settings */
 
 div.menu-wrapper {
   background-color: #3E3936;
+  width: 100%
 }
 
-div.menu {
-  overflow: hidden;
+div.menu, div.social {
   display: table;
-  align-items: center;
-  margin: 0px auto;
-}
-
-div.social-wrapper {
-  background-color: #3E3936;
+  margin: 0px auto
 }
 
 div.social {
-  display: table;
-  align-items: center;
-  margin: 0px auto;
   font-size: 2em
 }
 
-div.contact-wrapper {
-  background-color: #646B79;
+div.menu a:link, div.menu a:visited, div.social a:link, div.social a:visited  {
+  float: left;
+  padding: 15px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-weight: 400
 }
 
-div.footer-wrapper {
-  background-color: #3E3936;
+div.social a:link, div.social a:visited {
+  padding: 5px;
 }
 
-div.title, div.about, div.research, div.publications, div.contact, div.footer, div.blog {
+div.menu a:hover, div.menu a:active {
+  background-color: #646B79
+}
+
+div.social a:hover, div.social a:active {
+  color: #646B79
+}
+
+@media screen and (max-width: 750px) {
+  div.menu-wrapper {
+    display: flex;
+    align-items: center
+  }
+
+  div.menu {
+    width: 100%;
+  }
+
+  div.social {
+    display: flex;
+    flex-direction: column;
+    padding: 10px
+  }
+
+  div.menu a:link, div.menu a:visited {
+    display: block;
+    float: none;
+    padding: 10px
+  }
+}
+
+
+/* Container settings */
+
+div.container {
   margin: 0px auto;
   max-width: 1000px;
-  padding: 50px 20px;
-  overflow: hidden;
+  padding: 50px 20px
 }
 
-div.title {
+div.home-wrapper {
   display: flex;
   justify-content: center
 }
 
-div.title-cell {
+div.home-cell {
   float: left;
   padding: 0px 10px;
   max-width: 300px
 }
+
+
+
+/* Footer settings */
+
+div.footer-wrapper {
+  background-color: #3E3936;
+  width: 100%
+}
+
+div.footer {
+  text-align: right;
+  margin: 0px auto;
+  max-width: 1000px;
+  padding: 25px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 div.contact-menu {
   width: 33.3333%;
@@ -133,19 +189,7 @@ a:hover, a:active{
   text-decoration: underline;
 }
 
-.menu a:link, .menu a:visited {
-  float: left;
-  display: block;
-  padding: 15px 15px;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  font-weight: 400
-}
 
-.menu a:hover, .menu a:active {
-  background-color: #646B79
-}
 
 a.button:link, a.button:visited{
   font-family: "Montserrat", sans-serif;
@@ -167,27 +211,13 @@ i.fas {
   margin-right: 10px
 }
 
-i.fab, i.ai {
-  color: white;
-  padding: 10px 5px;
-}
 
-i.fab:hover, i.ai:hover {
-  color: #646B79;
-}
 
 
 /* RESPONSIVE DESIGN */
 
 @media screen and (max-width: 750px) {
-  div.header {
-    height: 200px
-  }
 
-  div.menu {
-    position: relative;
-    width: 100%
-  }
 
   div.title, div.about, div.research, div.publications, div.contact, div.footer {
     padding: 20px 10px
@@ -211,10 +241,10 @@ i.fab:hover, i.ai:hover {
     font-size: 1em
   }
 
-  .menu a:link {
-    float: none;
-    text-align: left;
-    padding: 12px
+
+
+
+
   }
 }
 
@@ -222,4 +252,8 @@ i.fab:hover, i.ai:hover {
   div.contact-menu {
     width: 100%
   }
+}
+
+.contact, .footer {
+  color: #FFFFFF
 }
