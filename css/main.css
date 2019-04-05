@@ -168,6 +168,13 @@ div.home-cell {
   max-width: 300px
 }
 
+div.contact-menu {
+  width: 33.3333%;
+  float: left;
+  text-align: center;
+  color: white
+}
+
 @media screen and (max-width: 750px) {
   div.container {
     padding: 20px 10px
@@ -180,6 +187,10 @@ div.home-cell {
   div.home-cell {
     margin: 0px auto;
     padding: 0px
+  }
+
+  div.contact-menu {
+    width: 100%
   }
 }
 
@@ -196,33 +207,4 @@ div.footer {
   margin: 0px auto;
   max-width: 1000px;
   padding: 25px 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* LEFTOVERS */
-
-div.contact-menu {
-  width: 33.3333%;
-  float: left;
-  text-align: center
-}
-
-@media screen and (max-width: 850px) {
-  div.contact-menu {
-    width: 100%
-  }
-}
-
-.contact, .footer {
-  color: #FFFFFF
 }
