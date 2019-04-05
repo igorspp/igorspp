@@ -19,6 +19,33 @@ h2 {
   color: #646B79
 }
 
+a:link, a:visited {
+  color: #646B79;
+  text-decoration: none;
+  font-weight: 700
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+a.button:link, a.button:visited {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  background-color: #646B79;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  font-weight: 400
+}
+
+a.button:hover, a.button:active {
+  opacity: 0.7
+}
+
+i.fas {
+  margin-right: 10px
+}
+
 
 /* Header settings */
 
@@ -33,25 +60,31 @@ div.header {
   flex-direction: column
 }
 
-@media screen and (max-width: 750px) {
-  div.header {
-    height: 200px
-  }
-}
-
-.header h1 {
-  margin: 0px;
+div.header h1 {
   font-size: 3em;
   font-style: italic;
   font-weight: 400;
   color: white;
 }
 
-.header h2 {
+div.header h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
   color: white;
+}
+
+@media screen and (max-width: 750px) {
+  div.header {
+    height: 200px
+  }
+
+  div.header h1 {
+    font-size: 2em
+  }
+
+  div.header h2 {
+    font-size: 1em
 }
 
 
@@ -135,6 +168,21 @@ div.home-cell {
   max-width: 300px
 }
 
+@media screen and (max-width: 750px) {
+  div.container {
+    padding: 20px 10px
+  }
+
+  div.home-wrapper {
+    flex-direction: column;
+  }
+
+  div.home-cell {
+    margin: 0px auto;
+    padding: 0px
+  }
+}
+
 
 /* Footer settings */
 
@@ -169,84 +217,17 @@ div.contact-menu {
 }
 
 
-/* HEADERS */
-
-
-
-
-
-
-
-/* LINKS */
-
-a:link, a:visited{
-  color: #646B79;
-  text-decoration: none;
-  font-weight: 700
-}
-
-a:hover, a:active{
-  text-decoration: underline;
-}
-
-
-
-a.button:link, a.button:visited{
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  background-color: #646B79;
-  color: #FFFFFF;
-  padding: 10px 20px;
-  font-weight: 400
-}
-
-a.button:hover, a.button:active {
-  opacity: 0.7
-}
-
-
-/* ICONS */
-
-i.fas {
-  margin-right: 10px
-}
-
 
 
 
 /* RESPONSIVE DESIGN */
 
-@media screen and (max-width: 750px) {
-
-
-  div.title, div.about, div.research, div.publications, div.contact, div.footer {
-    padding: 20px 10px
-  }
-
-  div.title {
-    flex-direction: column;
-  }
-
-  div.title-cell{
-    margin: 0px auto;
-    padding: 0px;
-    max-width: 300px;
-  }
-
-  .header h1 {
-    font-size: 2em
-  }
-
-  .header h2 {
-    font-size: 1em
-  }
 
 
 
 
 
-  }
-}
+
 
 @media screen and (max-width: 850px) {
   div.contact-menu {
