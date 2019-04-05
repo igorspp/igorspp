@@ -34,7 +34,7 @@ div.header {
 }
 
 div.menu-wrapper, div.social-wrapper, div.title-wrapper, div.about-wrapper,
-div.research-wrapper, div.publications-wrapper, div.contact-wrapper, div.footer-wrapper {
+div.research-wrapper, div.publications-wrapper, div.contact-wrapper, div.footer-wrapper, div.blog-wrapper {
   width: 100%
 }
 
@@ -68,7 +68,7 @@ div.footer-wrapper {
   background-color: #3E3936;
 }
 
-div.title, div.about, div.research, div.publications, div.contact, div.footer {
+div.title, div.about, div.research, div.publications, div.contact, div.footer, div.blog {
   margin: 0px auto;
   max-width: 1000px;
   padding: 50px 20px;
@@ -110,7 +110,7 @@ div.contact-menu {
   color: white;
 }
 
-.title h2, .about h2, .research h2, .publications h2, .contact h2 {
+.title h2, .about h2, .research h2, .publications h2, .contact h2, .blog h2 {
   margin: 0px;
   font-family: "Montserrat", sans-serif;
   color: #646B79
@@ -136,7 +136,7 @@ a:hover, a:active{
 .menu a:link, .menu a:visited {
   float: left;
   display: block;
-  padding: 15px 25px;
+  padding: 15px 15px;
   color: white;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
