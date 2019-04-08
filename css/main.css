@@ -16,7 +16,9 @@ body {
 h2 {
   margin: 0px;
   font-family: "Montserrat", sans-serif;
-  color: #646B79
+  color: #646B79;
+  display: inline;
+  border-bottom: 2px solid;
 }
 
 a:link, a:visited {
@@ -35,7 +37,8 @@ a.button:link, a.button:visited {
   background-color: #646B79;
   color: #FFFFFF;
   padding: 10px 20px;
-  font-weight: 400
+  font-weight: 400;
+  display: inline-block;
 }
 
 a.button:hover, a.button:active {
@@ -76,7 +79,8 @@ div.header h2 {
 
 @media screen and (max-width: 750px) {
   div.header {
-    height: 200px
+    /* height: 200px */
+    display: none;
   }
 
   div.header h1 {
@@ -92,7 +96,9 @@ div.header h2 {
 
 div.menu-wrapper {
   background-color: #3E3936;
-  width: 100%
+  width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 div.menu, div.social {
@@ -159,13 +165,14 @@ div.container {
 
 div.home-wrapper {
   display: flex;
-  justify-content: center
+  justify-content: center;
+  margin: 0px auto;
+  padding-bottom: 50px
 }
 
 div.home-cell {
   float: left;
-  padding: 0px 10px;
-  max-width: 300px
+  padding: 0% 1%
 }
 
 div.contact-menu {
@@ -182,11 +189,11 @@ div.contact-menu {
 
   div.home-wrapper {
     flex-direction: column;
+    padding-bottom: 20px
   }
 
   div.home-cell {
-    margin: 0px auto;
-    padding: 0px
+    padding: 10px 0px
   }
 
   div.contact-menu {
