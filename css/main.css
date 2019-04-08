@@ -75,6 +75,7 @@ div.header h2 {
   font-size: 1.2em;
   font-weight: 400;
   color: white;
+  border-bottom: 0px;
 }
 
 @media screen and (max-width: 750px) {
