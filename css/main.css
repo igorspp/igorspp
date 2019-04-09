@@ -53,7 +53,7 @@ i.fas {
 /* Header settings */
 
 div.header {
-  background-image: url("https://pbs.twimg.com/profile_banners/778878774888763392/1474970834/1500x500");
+  background-image: url("../images/header-1500x500.jpg");
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -92,6 +92,7 @@ div.header h2 {
     font-size: 1em
   }
 }
+
 
 /* Menu settings */
 
@@ -176,6 +177,18 @@ div.home-cell {
   padding: 0% 1%
 }
 
+div.twitter-large {
+  float: left;
+  padding: 0% 1%;
+  min-width: 48%
+}
+
+div.twitter-small {
+  float: left;
+  padding: 10px 0px;
+  display: none
+}
+
 div.contact-menu {
   width: 33.3333%;
   float: left;
@@ -197,6 +210,14 @@ div.contact-menu {
     padding: 10px 0px
   }
 
+  div.twitter-large {
+    display: none
+  }
+
+  div.twitter-small {
+    display: inline
+  }
+
   div.contact-menu {
     width: 100%
   }
@@ -205,7 +226,7 @@ div.contact-menu {
 
 /* Footer settings */
 
-div.footer-wrapper {
+/* div.footer-wrapper {
   background-color: #3E3936;
   width: 100%
 }
@@ -215,4 +236,4 @@ div.footer {
   margin: 0px auto;
   max-width: 1000px;
   padding: 25px 20px;
-}
+} */
