@@ -172,12 +172,7 @@ div.home-wrapper {
   padding-bottom: 50px
 }
 
-div.home-cell {
-  float: left;
-  padding: 0% 1%
-}
-
-div.twitter-large {
+div.home-cell, div.twitter-large {
   float: left;
   padding: 0% 1%
 }
