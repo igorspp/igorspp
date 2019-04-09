@@ -207,7 +207,7 @@ div.contact-menu {
   }
 
   div.twitter-small {
-    display: inline;
+    display: block;
     padding: 10px 0px;
     width: 100%
   }
