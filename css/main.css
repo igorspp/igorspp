@@ -179,13 +179,10 @@ div.home-cell {
 
 div.twitter-large {
   float: left;
-  padding: 0% 1%;
-  min-width: 48%
+  padding: 0% 1%
 }
 
 div.twitter-small {
-  float: left;
-  padding: 10px 0px;
   display: none
 }
 
@@ -215,7 +212,9 @@ div.contact-menu {
   }
 
   div.twitter-small {
-    display: inline
+    display: inline;
+    padding: 10px 0px;
+    width: 100%
   }
 
   div.contact-menu {
