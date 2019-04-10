@@ -198,7 +198,7 @@ div.contact-menu {
     padding-bottom: 20px
   }
 
-  div.home-cell {
+  div.home-cell, div.twitter-small {
     padding: 10px 0px
   }
 
@@ -208,7 +208,6 @@ div.contact-menu {
 
   div.twitter-small {
     display: block;
-    padding: 10px 0px;
     width: 100%
   }
 
