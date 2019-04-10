@@ -46,7 +46,8 @@ a.button:hover, a.button:active {
 }
 
 i.fas {
-  margin-right: 10px
+  margin-right: 10px;
+  text-decoration: none
 }
 
 
@@ -165,14 +166,14 @@ div.container {
   padding: 50px 20px
 }
 
-div.home-wrapper {
+div.home-wrapper, div.contact-wrapper {
   display: flex;
   justify-content: center;
   margin: 0px auto;
   padding-bottom: 50px
 }
 
-div.home-cell, div.twitter-large {
+div.home-cell, div.twitter-large, div.contact-cell {
   float: left;
   padding: 0% 1%
 }
@@ -193,12 +194,12 @@ div.contact-menu {
     padding: 20px 10px
   }
 
-  div.home-wrapper {
+  div.home-wrapper, div.contact-wrapper {
     flex-direction: column;
     padding-bottom: 20px
   }
 
-  div.home-cell, div.twitter-small {
+  div.home-cell, div.twitter-small, div.contact-cell {
     padding: 10px 0px
   }
 
