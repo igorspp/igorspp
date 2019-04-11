@@ -166,14 +166,17 @@ div.container {
   padding: 50px 20px
 }
 
-div.home-wrapper {
+div.home-wrapper, div.contact-wrapper {
   display: flex;
   justify-content: center;
-  margin: 0px auto;
+  margin: 0px auto
+}
+
+div.home-wrapper {
   padding-bottom: 50px
 }
 
-div.home-picture, div.home-about, div.home-twitter, div.home-blog, div.home-publications, div.home-contact {
+div.home-picture, div.home-about, div.home-twitter, div.home-blog, div.home-publications, div.home-contact, div.contact-map, div.contact-info {
   float: left;
   padding: 0% 1%
 }
@@ -186,7 +189,7 @@ div.home-about {
   min-width: 68%
 }
 
-div.home-twitter, div.home-blog {
+div.home-twitter, div.home-blog, div.contact-map, div.contact-info {
   min-width: 48%
 }
 
