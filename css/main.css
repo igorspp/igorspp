@@ -79,9 +79,8 @@ div.header h2 {
   border-bottom: 0px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 650px) {
   div.header {
-    /* height: 200px */
     display: none;
   }
 
@@ -134,10 +133,11 @@ div.social a:hover, div.social a:active {
   color: #646B79
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 650px) {
   div.menu-wrapper {
     display: flex;
-    align-items: center
+    align-items: center;
+    position: static
   }
 
   div.menu {
@@ -166,53 +166,74 @@ div.container {
   padding: 50px 20px
 }
 
-div.home-wrapper, div.contact-wrapper {
+div.home-wrapper {
   display: flex;
   justify-content: center;
   margin: 0px auto;
   padding-bottom: 50px
 }
 
-div.home-cell, div.twitter-large, div.contact-cell {
+div.home-picture, div.home-about, div.home-twitter, div.home-blog, div.home-publications, div.home-contact {
   float: left;
   padding: 0% 1%
 }
 
-div.twitter-small {
+div.home-picture {
+  min-width: 28%
+}
+
+div.home-about {
+  min-width: 68%
+}
+
+div.home-twitter, div.home-blog {
+  min-width: 48%
+}
+
+div.home-twitter-mob {
   display: none
 }
 
-div.contact-menu {
+div.home-contact {
+  width: 100%
+}
+
+div.home-contact-menu {
   width: 33.3333%;
   float: left;
   text-align: center;
   color: white
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 650px) {
   div.container {
     padding: 20px 10px
   }
 
-  div.home-wrapper, div.contact-wrapper {
+  div.home-wrapper {
     flex-direction: column;
     padding-bottom: 20px
   }
 
-  div.home-cell, div.twitter-small, div.contact-cell {
+  div.home-picture, div.home-about, div.home-twitter-mob, div.home-blog, div.home-publications, div.home-contact {
     padding: 10px 0px
   }
 
-  div.twitter-large {
+  div.home-picture {
+    max-width: 50%;
+    margin: 0px auto
+  }
+
+  div.home-twitter {
     display: none
   }
 
-  div.twitter-small {
+  div.home-twitter-mob {
     display: block;
     width: 100%
   }
 
-  div.contact-menu {
+  div.home-contact-menu {
     width: 100%
   }
 }
@@ -220,14 +241,15 @@ div.contact-menu {
 
 /* Footer settings */
 
-/* div.footer-wrapper {
+div.footer {
   background-color: #3E3936;
-  width: 100%
+  text-align: right;
+  padding: 25px 20px;
+  color: #FFFFFF
 }
 
-div.footer {
-  text-align: right;
-  margin: 0px auto;
-  max-width: 1000px;
-  padding: 25px 20px;
-} */
+@media screen and (max-width: 650px) {
+  div.footer {
+    padding: 10px
+  }
+}
