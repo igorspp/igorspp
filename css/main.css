@@ -46,8 +46,79 @@ a.button:hover, a.button:active {
 }
 
 i.fas {
-  margin-right: 10px;
-  text-decoration: none
+  margin-right: 10px
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center
+}
+
+.margin-bottom {
+  padding-bottom: 50px
+}
+
+.margin-right {
+  padding-right: 25px
+}
+
+.margin-auto {
+  margin: 0px auto
+}
+
+.one-third {
+  width: 33.333333%
+}
+
+.two-thirds {
+  width: 66.666666%
+}
+
+.one-half {
+  width: 50%
+}
+
+.appear-mob {
+  display: none
+}
+
+.white-text {
+  color: #FFFFFF
+}
+
+.centered {
+  text-align: center
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    flex-direction: column
+  }
+
+  .margin-bottom {
+    padding-bottom: 25px
+  }
+
+  .margin-right {
+    padding-right: 0px;
+    padding-bottom: 25px
+  }
+
+  .one-third-mob {
+    width: 50%
+  }
+
+  .one-third, .two-thirds, .one-half {
+    width: 100%
+  }
+
+  .hide-mob {
+    display: none
+  }
+
+  .appear-mob {
+    display: block
+  }
 }
 
 
@@ -76,20 +147,12 @@ div.header h2 {
   font-size: 1.2em;
   font-weight: 400;
   color: white;
-  border-bottom: 0px;
+  border: 0px;
 }
 
 @media screen and (max-width: 650px) {
   div.header {
     display: none;
-  }
-
-  div.header h1 {
-    font-size: 2em
-  }
-
-  div.header h2 {
-    font-size: 1em
   }
 }
 
@@ -98,7 +161,6 @@ div.header h2 {
 
 div.menu-wrapper {
   background-color: #3E3936;
-  width: 100%;
   position: sticky;
   top: 0;
 }
@@ -125,12 +187,8 @@ div.social a:link, div.social a:visited {
   padding: 5px;
 }
 
-div.menu a:hover, div.menu a:active {
+div.menu a:hover, div.menu a:active, div.social a:hover, div.social a:active {
   background-color: #646B79
-}
-
-div.social a:hover, div.social a:active {
-  color: #646B79
 }
 
 @media screen and (max-width: 650px) {
@@ -166,81 +224,11 @@ div.container {
   padding: 50px 20px
 }
 
-div.home-wrapper, div.contact-wrapper {
-  display: flex;
-  justify-content: center;
-  margin: 0px auto
-}
-
-div.home-wrapper {
-  padding-bottom: 50px
-}
-
-div.home-picture, div.home-about, div.home-twitter, div.home-blog, div.home-publications, div.home-contact, div.contact-map, div.contact-info {
-  float: left;
-  padding: 0% 1%
-}
-
-div.home-picture {
-  min-width: 28%
-}
-
-div.home-about {
-  min-width: 68%
-}
-
-div.home-twitter, div.home-blog, div.contact-map, div.contact-info {
-  min-width: 48%
-}
-
-div.home-twitter-mob {
-  display: none
-}
-
-div.home-contact {
-  width: 100%
-}
-
-div.home-contact-menu {
-  width: 33.3333%;
-  float: left;
-  text-align: center;
-  color: white
-}
-
 @media screen and (max-width: 650px) {
   div.container {
     padding: 20px 10px
   }
-
-  div.home-wrapper {
-    flex-direction: column;
-    padding-bottom: 20px
-  }
-
-  div.home-picture, div.home-about, div.home-twitter-mob, div.home-blog, div.home-publications, div.home-contact {
-    padding: 10px 0px
-  }
-
-  div.home-picture {
-    max-width: 50%;
-    margin: 0px auto
-  }
-
-  div.home-twitter {
-    display: none
-  }
-
-  div.home-twitter-mob {
-    display: block;
-    width: 100%
-  }
-
-  div.home-contact-menu {
-    width: 100%
-  }
 }
-
 
 /* Footer settings */
 
