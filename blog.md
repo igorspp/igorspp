@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Igor S. Pessi, PhD: Blog"
+permalink: /blog/
 ---
 
     <h2><i class="fas fa-blog"></i>Blog</h2>
