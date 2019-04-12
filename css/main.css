@@ -13,6 +13,10 @@ body {
   line-height: 1.5
 }
 
+img {
+  vertical-align: middle;
+}
+
 h2 {
   margin: 0px;
   font-family: "Montserrat", sans-serif;
@@ -131,9 +135,9 @@ i.fas {
     display: block
   }
 
-.right {
-  text-align: center
-}
+  .right {
+    text-align: center
+  }
 }
 
 
@@ -155,14 +159,15 @@ div.header h1 {
   font-style: italic;
   font-weight: 400;
   color: white;
+  margin: 0px;
+  line-height: 1.5em
 }
 
 div.header h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
-  color: white;
-  border: 0px;
+  color: white
 }
 
 @media screen and (max-width: 650px) {
@@ -186,6 +191,7 @@ div.menu-wrapper {
   background-color: #3E3936;
   position: sticky;
   top: 0;
+  z-index: 2
 }
 
 div.menu, div.social {
@@ -291,4 +297,66 @@ div.footer {
   div.footer {
     padding: 10px
   }
+}
+
+/* Slideshow settings */
+
+div.wrapper-slideshow {
+  position: relative;
+}
+
+div.slideshow {
+  display: none;
+}
+
+.slideshow-prev, .slideshow-next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 20px;
+  margin-top: -50px;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.slideshow-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slideshow-prev:hover, .slideshow-next:hover {
+  background-color: #646B79;
+  text-decoration: none
+}
+
+div.wrapper-slideshow-caption {
+  text-align: center;
+  background-color: #222;
+  padding: 10px 20px;
+  color: white;
+  font-family: "Montserrat", sans-serif
+}
+
+.slideshow-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slideshow-column {
+  float: left;
+  width: 33.333333%;
+  cursor: pointer
+}
+
+.slideshow-thumb {
+  opacity: 0.6;
+}
+
+.slideshow-thumb-active, .slideshow-thumb:hover {
+  opacity: 1;
 }
