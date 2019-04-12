@@ -20,12 +20,19 @@
 
   <script>
     function myFunction() {
-      var x = document.getElementById("topmenu");
+      var x = document.getElementById("menu");
       if (x.className === "menu") {
         x.className += " responsive";
       }
       else {
       x.className = "menu";
+      }
+      var y = document.getElementById("social");
+      if (y.className === "social") {
+        y.className += " responsive";
+      }
+      else {
+      y.className = "social";
       }
     }
   </script>
@@ -37,17 +44,17 @@
 
   <div class="menu-wrapper">
 
-    <div class="menu" id="topmenu">
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+    <div class="menu" id="menu">
       <a href="/"><i class="fas fa-building" ></i>Home</a>
       <a href="/about"><i class="fas fa-user"></i>About me</a>
       <a href="/research"><i class="fas fa-dna"></i>Research</a>
       <a href="/publications"><i class="fas fa-book"></i>Publications</a>
       <a href="/contact"><i class="fas fa-envelope"></i>Contact</a>
       <!-- <a href="/blog"><i class="fas fa-blog"></i>Blog</a> -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
     </div>
 
-    <div class="social">
+    <div class="social" id="social">
       <a href="https://www.twitter.com/igor_spp" target="_blank" title="Twitter profile"><i class="fab fa-twitter-square"></i></a>
       <a href="https://www.researchgate.net/profile/Igor_Pessi" target="_blank" title="ResearchGate profile"><i class="ai ai-researchgate-square"></i></a>
       <a href="https://scholar.google.com/citations?user=eS3B3UAAAAAJ&hl=en" target="_blank" title="GoogleScholar profile"><i class="ai ai-google-scholar-square"></i></a>
@@ -60,9 +67,14 @@
 	   {{ content }}
 	</div>
 
-  <div class="footer">
-    <p> Website developed by Igor S. Pessi <br />
-      Based on code from <a href="https://www.w3schools.com" target="_blank" >w3schools.com</p>
+  <div class="footer-wrapper">
+
+    <div class="footer">
+    <p> Website developed by Igor S. Pessi<br />
+      Based on code from <a href="https://www.w3schools.com" target="_blank">w3schools</a><br />
+      Powered by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+    </div>
+
   </div>
 
 </body>
