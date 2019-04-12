@@ -18,6 +18,18 @@
 
 <body>
 
+  <script>
+    function myFunction() {
+      var x = document.getElementById("topmenu");
+      if (x.className === "menu") {
+        x.className += " responsive";
+      }
+      else {
+      x.className = "menu";
+      }
+    }
+  </script>
+
   <div class="header">
     <h1>Igor S. Pessi, PhD</h1>
     <h2>POLAR MICROBIAL ECOLOGIST</h2>
@@ -25,7 +37,8 @@
 
   <div class="menu-wrapper">
 
-    <div class="menu">
+    <div class="menu" id="topmenu">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
       <a href="/"><i class="fas fa-building" ></i>Home</a>
       <a href="/about"><i class="fas fa-user"></i>About me</a>
       <a href="/research"><i class="fas fa-dna"></i>Research</a>
