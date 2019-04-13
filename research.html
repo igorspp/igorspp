@@ -4,5 +4,84 @@ title: "Igor S. Pessi, PhD: Research"
 permalink: /research/
 ---
 
-<h2><i class="fas fa-dna"></i>Research</h2>
-<p></p>
+<div class="wrapper margin-bottom">
+  <h2><i class="fas fa-dna"></i>Research</h2>
+  <p>My research is focused on the study of microbial communities in polar environments.</p>
+</div>
+
+<div class="wrapper">
+
+  <div class="slideshow">
+    <img src="../images/slideshow1.jpg" style="width:100%">
+  </div>
+
+  <div class="slideshow">
+    <img src="../images/slideshow2.jpg" style="width:100%">
+  </div>
+
+  <div class="slideshow">
+    <img src="../images/slideshow3.jpg" style="width:100%">
+  </div>
+
+  <a class="slideshow-prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="slideshow-next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="slideshow-caption-wrapper">
+    <p id="slideshow-caption"></p>
+  </div>
+
+  <div class="slideshow-row">
+
+    <div class="slideshow-column">
+      <img class="slideshow-thumb " src="../images/slideshow1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Kilpisjärvi, Finland">
+    </div>
+
+    <div class="slideshow-column">
+      <img class="slideshow-thumb " src="../images/slideshow2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Kilpisjärvi, Finland">
+    </div>
+
+    <div class="slideshow-column">
+      <img class="slideshow-thumb " src="../images/slideshow3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Svalbard, Norway">
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slideshow");
+    var dots = document.getElementsByClassName("slideshow-thumb");
+    var captionText = document.getElementById("slideshow-caption");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" slideshow-thumb-active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " slideshow-thumb-active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+</script>
+
+<p class="appear-mob"></p>
+<span class="right appear-mob"><a href="#top" class="button">Back to top</a></span>
