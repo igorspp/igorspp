@@ -28,6 +28,10 @@
   display: none;
 }
 
+.menu i.fas, .menu i.fab {
+  margin-right: 15px
+}
+
 @media screen and (max-width: 850px) {
   .menu a:link, .menu a:visited {
     margin: 25px 10px;

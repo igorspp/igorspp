@@ -28,6 +28,10 @@ h3 {
   font-family: "Montserrat", sans-serif
 }
 
+h2 i.fas, h2 i.fab {
+  margin-right: 15px
+}
+
 a.button:link, a.button:visited {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
@@ -48,7 +52,8 @@ a.button:hover, a.button:active {
 }
 
 .wrapper-flex {
-  display: flex
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -81,10 +86,6 @@ a.button:hover, a.button:active {
 .right {
   display: block;
   text-align: right
-}
-
-i.fas {
-  margin-right: 15px
 }
 
 .avatar {

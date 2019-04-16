@@ -1,0 +1,25 @@
+.footer {
+  margin: 0px auto;
+  max-width: 1000px;
+  padding: 25px;
+  text-align: center
+}
+
+.footer i.fab, .footer i.ai {
+  padding: 10px!important;
+  border-radius: 50%;
+  background-color: #646B79;
+  color: white;
+  margin-bottom: 25px;
+  font-size: 1.5em
+}
+
+.footer i.fab:hover, .footer i.fab:active, .footer i.ai:hover, .footer i.ai:active {
+  opacity: 0.8
+}
+
+@media screen and (max-width: 768px) {
+  .footer i.fab, .footer i.ai {
+    font-size: 1em
+  }
+}
