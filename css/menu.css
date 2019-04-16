@@ -35,17 +35,19 @@
   display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
+  .menu a:link, .menu a:visited, .menu-alt a:link, .menu-alt a:visited {
+    margin: 25px 10px;
+}
+
+@media screen and (max-width: 768px) {
   .menu, .menu.responsive, .menu-alt, .menu-alt.responsive {
-    position: fixed;
+    position: static;
     top: 100px;
     width: 100%;
     flex-direction: column;
-    align-items: flex-start
-  }
-
-  .menu.responsive, .menu-alt.responsive {
-    padding-bottom: 50px
+    align-items: flex-start;
+    background-color: #EEEEEE
   }
 
   .menu a:link, .menu-alt a:link {
@@ -57,11 +59,15 @@
     margin: 10px 25px
   }
 
+  .menu.responsive a:link, .menu-alt.responsive a:link, .menu.responsive a:visited, .menu-alt.responsive a:visited {
+    border-bottom: 1px solid #EEEEEE;
+  }
+
   .menu a.icon, .menu-alt a.icon, .menu.responsive a.icon, .menu-alt.responsive a.icon {
     display: block;
     margin: 0px;
     padding: 0px;
-    position: fixed;
+    position: absolute;
     left: 25px;
     top: 30px;
     font-size: 2em;

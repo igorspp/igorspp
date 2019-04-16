@@ -7,7 +7,6 @@ body {
   line-height: 1.5
 }
 
-
 a:link, a:visited {
   color: #646B79;
   text-decoration: none;
@@ -93,7 +92,7 @@ i.fas {
   border-radius: 50%
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   body {
     line-height: 1.3
   }
