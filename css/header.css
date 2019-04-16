@@ -2,12 +2,12 @@
   position: sticky;
   top: 0px;
   z-index: 1;
-  overflow: overlay;
   width: 100%;
   background-color: #FFFFFF;
 }
 
 .header, .header-alt {
+
   margin: 0px auto;
   display: flex;
   align-items: center;
