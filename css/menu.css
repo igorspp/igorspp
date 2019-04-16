@@ -1,0 +1,73 @@
+.menu, .menu-alt {
+  position: sticky;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: top 0.5s linear;
+  background-color: #FFFFFF
+}
+
+.menu {
+  top: 250px
+}
+
+.menu-alt {
+  top: 100px
+}
+
+.menu a:link, .menu a:visited, .menu-alt a:link, .menu-alt a:visited {
+  margin: 25px;
+  padding-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  color: #000000;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.menu a:hover, .menu a:active, .menu a.selected, .menu-alt a:hover, .menu-alt a:active, .menu-alt a.selected {
+  color: #646B79;
+  border-bottom: 1px solid #646B79;
+}
+
+.menu a.icon, .menu-alt a.icon  {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .menu, .menu.responsive, .menu-alt, .menu-alt.responsive {
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start
+  }
+
+  .menu.responsive, .menu-alt.responsive {
+    padding-bottom: 50px
+  }
+
+  .menu a:link, .menu-alt a:link {
+    display: none
+  }
+
+  .menu.responsive a:link, .menu-alt.responsive a:link {
+    display: block;
+    margin: 10px 25px
+  }
+
+  .menu a.icon, .menu-alt a.icon, .menu.responsive a.icon, .menu-alt.responsive a.icon {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    left: 25px;
+    top: 30px;
+    font-size: 2em;
+  }
+
+  .menu a.icon:hover, .menu.responsive a.icon:hover, .menu-alt a.icon:hover, .menu-alt.responsive a.icon:hover {
+    border-bottom: 1px solid #FFFFFF;
+  }
+}

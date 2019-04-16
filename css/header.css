@@ -1,0 +1,71 @@
+.header, .header-alt {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s linear;
+  background-color: #FFFFFF
+}
+
+.header {
+  height: 250px
+}
+
+.header-alt {
+  height: 100px;
+  top: 10
+}
+
+.header h1, .header-alt h1 {
+  font-style: italic;
+  font-weight: 400;
+  margin: 0px;
+  line-height: 1.5em;
+  transition: all 0.5s linear;
+}
+
+.header h1 {
+  font-size: 3em
+}
+
+.header-alt h1 {
+  font-size: 2em
+}
+
+.header h2, .header-alt h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  transition: all 0.5s linear;
+}
+
+.header h2 {
+  font-size: 1.2em
+}
+
+.header-alt h2 {
+  font-size: 1em
+}
+
+@media screen and (max-width: 700px) {
+  .header, .header-alt {
+    height: 100px;
+    /* margin-left: 53px */
+  }
+
+  .header h1, .header-alt h1 {
+    font-size: 1.5em
+  }
+
+  .header h2, .header-alt h2 {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header, .header-alt {
+    padding: 0px 25px 0px 53px;
+    align-items: flex-end;
+  }
