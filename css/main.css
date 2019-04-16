@@ -54,11 +54,11 @@ a.button:hover, a.button:active {
 .container {
   margin: 0px auto;
   max-width: 1000px;
-  padding: 100px 25px
+  padding: 50px 25px
 }
 
 .margin-bottom {
-  padding-bottom: 100px
+  padding-bottom: 50px
 }
 
 .margin-right {

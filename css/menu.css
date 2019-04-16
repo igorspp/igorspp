@@ -1,5 +1,6 @@
-.menu, .menu-alt {
+.menu {
   position: sticky;
+  top: 125px;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -8,15 +9,7 @@
   background-color: #FFFFFF
 }
 
-.menu {
-  top: 250px
-}
-
-.menu-alt {
-  top: 100px
-}
-
-.menu a:link, .menu a:visited, .menu-alt a:link, .menu-alt a:visited {
+.menu a:link, .menu a:visited {
   margin: 25px;
   padding-bottom: 5px;
   font-family: "Montserrat", sans-serif;
@@ -26,22 +19,22 @@
   border-bottom: 1px solid #FFFFFF;
 }
 
-.menu a:hover, .menu a:active, .menu a.selected, .menu-alt a:hover, .menu-alt a:active, .menu-alt a.selected {
+.menu a:hover, .menu a:active, .menu a.selected {
   color: #646B79;
   border-bottom: 1px solid #646B79;
 }
 
-.menu a.icon, .menu-alt a.icon  {
+.menu a.icon  {
   display: none;
 }
 
 @media screen and (max-width: 850px) {
-  .menu a:link, .menu a:visited, .menu-alt a:link, .menu-alt a:visited {
+  .menu a:link, .menu a:visited {
     margin: 25px 10px;
 }
 
 @media screen and (max-width: 768px) {
-  .menu, .menu.responsive, .menu-alt, .menu-alt.responsive {
+  .menu, .menu.responsive {
     position: static;
     top: 100px;
     width: 100%;
@@ -50,20 +43,20 @@
     background-color: #EEEEEE
   }
 
-  .menu a:link, .menu-alt a:link {
+  .menu a:link {
     display: none
   }
 
-  .menu.responsive a:link, .menu-alt.responsive a:link {
+  .menu.responsive a:link {
     display: block;
     margin: 10px 25px
   }
 
-  .menu.responsive a:link, .menu-alt.responsive a:link, .menu.responsive a:visited, .menu-alt.responsive a:visited {
+  .menu.responsive a:link, .menu.responsive a:visited {
     border-bottom: 1px solid #EEEEEE;
   }
 
-  .menu a.icon, .menu-alt a.icon, .menu.responsive a.icon, .menu-alt.responsive a.icon {
+  .menu a.icon, .menu.responsive a.icon {
     display: block;
     margin: 0px;
     padding: 0px;
@@ -73,7 +66,7 @@
     font-size: 2em;
   }
 
-  .menu a.icon:hover, .menu.responsive a.icon:hover, .menu-alt a.icon:hover, .menu-alt.responsive a.icon:hover {
+  .menu a.icon:hover, .menu.responsive a.icon:hover {
     border-bottom: 1px solid #FFFFFF;
   }
 }
