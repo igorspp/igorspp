@@ -1,5 +1,6 @@
 .header-wrapper {
   position: sticky;
+  position: -webkit-sticky;
   top: 0px;
   z-index: 1;
   width: 100%;
@@ -7,7 +8,6 @@
 }
 
 .header, .header-alt {
-
   margin: 0px auto;
   display: flex;
   align-items: center;
