@@ -26,8 +26,9 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    position: static;
-    height: 100px
+    position: fixed;
+    height: 100px;
+    width: 100%
   }
 
   .header h1 {

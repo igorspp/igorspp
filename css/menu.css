@@ -5,7 +5,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: top 0.5s linear;
   background-color: #FFFFFF
 }
 
@@ -39,7 +38,7 @@
 
 @media screen and (max-width: 768px) {
   .menu, .menu.responsive {
-    position: static;
+    position: fixed;
     top: 100px;
     width: 100%;
     flex-direction: column;
@@ -66,7 +65,7 @@
     padding: 0px;
     position: absolute;
     left: 25px;
-    top: 30px;
+    top: -70px;
     font-size: 2em;
   }
 
