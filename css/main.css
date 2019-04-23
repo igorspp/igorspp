@@ -46,6 +46,15 @@ a.button:hover, a.button:active {
   background-color: #989DA4;
 }
 
+a.normal-link {
+  font-weight: 400;
+  color: #3E3936
+}
+
+img {
+  max-width: 100%
+}
+
 .wrapper {
   position: relative;
   overflow: hidden
@@ -92,8 +101,7 @@ a.button:hover, a.button:active {
   text-align: right
 }
 
-.avatar {
-  max-width: 100%;
+.rounded {
   border-radius: 50%
 }
 
