@@ -238,10 +238,6 @@ td {
     padding: 50px 10px;
     height: auto
   }
-
-  .home {
-    font-size: 0.8em
-  }
 }
 
 @media screen and (max-width: 335px) {
