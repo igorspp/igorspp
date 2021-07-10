@@ -61,6 +61,7 @@ a:hover, a:active {
 .main {
   width: 100%; 
   max-width: 1024px; 
+  padding: 0px 10px;
 }
 
 .thumb {
@@ -121,17 +122,11 @@ a:hover, a:active {
   .container {
     flex-direction: column;
     align-items: center;
-    margin: 40px;
-    margin-top: 90px;
+    margin: 100px 10px;
     height: auto
   }
 
-  .main {
-    padding: 10px;
-  }
-
   .thumb {
-    margin: 0px;
     object-fit: contain;
     height: auto
   }
