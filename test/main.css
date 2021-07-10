@@ -230,6 +230,11 @@ td {
     padding: 10px
   }
 
+  .container {
+    padding: 50px 10px;
+    height: auto
+  }
+
   .home {
     font-size: 0.8em
   }
