@@ -54,6 +54,10 @@ td {
   align-items: center;
   padding: 0px 30px;
   width: 100%;
+  background-color: transparent
+}
+
+.menu-filled {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/background.jpg");
   background-position: top left;
   background-repeat: no-repeat;
@@ -87,8 +91,8 @@ td {
 /* Divs */
 
 .wrapper {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   padding: 50px;
   display: flex;
   align-items: center;
