@@ -1,0 +1,246 @@
+/* General */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  text-align: justify;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #3E3936;
+  line-height: 1.5
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  margin-top: 0px;
+  color: #646B79
+}
+
+a:link, a:visited {
+  color: #646B79;
+  text-decoration: none;
+  font-weight: 700
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%
+}
+
+td {
+  vertical-align: top
+}
+
+/* Navbar */
+
+.menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/background.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.menu a:link, .menu a:visited {
+  margin: 0 20px;
+  padding-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #FFFFFF;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.menu-left a:link, .menu-left a:visited {
+  font-weight: 700;
+}
+
+.menu a:hover, .menu a:active, .menu a.selected, .menu-left a:hover, .menu-left a:active {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.menu i.fas, .menu i.fab {
+  margin-right: 15px
+} 
+
+/* Divs */
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/background.jpg");
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+.home {
+  width: 100%; 
+  max-width: 1024px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  color: #FFFFFF
+}
+
+.main {
+  width: 100%; 
+  max-width: 1024px
+}
+
+.about-pic {
+  height: 500px; 
+  width: 100%;
+  margin-bottom: 50px;
+  object-fit: cover;
+  object-position: 75% 50%;
+}
+
+.research-wrapper {
+  display: flex;
+  margin: 50px 0;
+}
+
+.research-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  height: 450px; 
+  width: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+}
+
+#research-pic1 {
+  background-image: url("images/research1.jpg");
+}
+
+#research-pic2 {
+  background-image: url("images/research2.jpg");
+}
+
+.research-wrapper a:link, .research-wrapper a:visited {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #FFFFFF
+}
+
+.research-wrapper a:hover, .research-wrapper a:active {
+  text-decoration: none;
+}
+
+/* Responsive layouts */
+
+@media screen and (max-width: 1000px) {
+  .menu {
+    padding: 0px 10px;
+  }
+
+  .menu i.fas, .menu i.fab {
+    margin: 0
+  } 
+
+  .menu a:link, .menu a:visited {
+    margin: 0 10px;
+  }
+
+  .menu-hidden {
+    display: none;
+  }
+
+  .wrapper {
+    padding: 20px
+  }
+
+  .container {
+    padding: 50px 20px;
+    height: auto
+  }
+
+  .home {
+    font-size: 1em
+  }
+
+  .about-pic {
+    object-fit: contain;
+    height: auto
+  }
+
+  .research-wrapper {
+    flex-direction: column
+  }
+
+  .research-pic {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu {
+    padding: 5px;
+  }
+
+  .menu a:link, .menu a:visited {
+    margin: 0 5px;
+  }
+
+  .wrapper {
+    padding: 10px
+  }
+
+  .home {
+    font-size: 0.8em
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .menu {
+    padding: 0px 8px;
+  }
+
+  .menu a:link, .menu a:visited {
+    margin: 0 2px;
+  }
+}
