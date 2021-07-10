@@ -39,41 +39,40 @@
   margin-right: 15px
 } 
 
-@media screen and (max-width: 900px) {
-  .menu-right, .menu-right.responsive  {
-    position: absolute;
-    right: 50px;
-    top: 50px;
-    display: flex;
-    flex-direction: column;
-    background-color: #FFFFFF;
+@media screen and (max-width: 1000px) {
+  .hidden {
+    display: none;
   }
 
-  .menu-right.responsive {
-    min-height: 100vh;
-    width: 190px
+  .menu {
+    padding: 10px;
   }
 
-  .menu-right a:link {
-    display: none
+  .menu i.fas, .menu i.fab {
+    margin: 0
+  } 
+
+  .menu a:link, .menu a:visited {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu {
+    padding: 10px 15px;
   }
 
-  .menu-right.responsive a:link {
-    display: block;
-    margin: 5px 25px;
+  .menu a:link, .menu a:visited {
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .menu {
+    padding: 10px 18px;
   }
 
-  .menu a.icon, .menu.responsive a.icon {
-    display: block;
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    right: 50px;
-    top: 0px;
-    font-size: 2em;
-  }
-
-  .menu a.icon:hover, .menu.responsive a.icon:hover {
-    border-bottom: 2px solid #FFFFFF;
+  .menu a:link, .menu a:visited {
+    margin: 0 2px;
   }
 }

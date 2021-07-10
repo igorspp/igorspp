@@ -1,3 +1,3 @@
 $(function() {
-  $('.menu-right a[href$="/' + location.pathname.split("/")[2] + '"]').addClass('selected');
+  $('.menu a[href$="/' + location.pathname.split("/")[1] + '"]').addClass('selected');
 });

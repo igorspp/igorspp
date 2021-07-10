@@ -59,6 +59,7 @@ a:hover, a:active {
 }
 
 .main {
+  width: 100%; 
   max-width: 1024px; 
 }
 
@@ -109,10 +110,12 @@ a:hover, a:active {
   background-image: url("../images/research2.jpg");
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .home {
-    height: auto;
+    min-height: 666px;
     font-size: 1em;
+    margin: 50px 20px;
+    padding: 20px
   }
 
   .container {
@@ -139,5 +142,14 @@ a:hover, a:active {
 
   .research-thumb {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home {
+    min-height: auto;
+    font-size: 0.8em;
+    margin: 50px 20px;
+    padding: 10px
   }
 }
