@@ -105,7 +105,6 @@ td {
 
 .home-content {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2em;
   color: #FFFFFF
 }
 
@@ -176,10 +175,6 @@ td {
 
   .wrapper, .home-wrapper {
     padding: 25px 20px
-  }
-
-  .home-content {
-    font-size: 1em
   }
 
   #about-pic {
