@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
 body {
   margin: 0px;
   font-family: "Lora", serif;
