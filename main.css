@@ -1,11 +1,11 @@
 /* General */
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 html {
-  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+  -webkit-text-size-adjust: 100% /* Prevent font scaling in landscape while allowing user zoom */
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif
 }
 
 h2 {
@@ -32,7 +32,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  text-decoration: underline;
+  text-decoration: underline
 }
 
 table {
@@ -72,11 +72,11 @@ td {
 }
 
 .menu-left a:link, .menu-left a:visited {
-  font-weight: 700;
+  font-weight: 700
 }
 
 .menu a:hover, .menu a:active, .menu a.selected, .menu-left a:hover, .menu-left a:active {
-  border-bottom: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF
 }
 
 .menu i.fas, .menu i.fab {
@@ -124,7 +124,7 @@ td {
   width: 100%;
   padding: 25px 50px;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.8em
 }
 
 .footer i.fab, .footer i.fas, .footer i.ai {
@@ -145,12 +145,12 @@ td {
   width: 100%;
   margin: 20px 0px;
   object-fit: cover;
-  object-position: 75% 50%;
+  object-position: 75% 50%
 }
 
 .research-wrapper {
   display: flex;
-  margin: 50px 0;
+  margin: 50px 0
 }
 
 .research-wrapper-child {
@@ -164,15 +164,15 @@ td {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #000000;
+  background-color: #000000
 }
 
 #research-wrapper-child01 {
-  background-image: url("images/research1.jpg");
+  background-image: url("images/research1.jpg")
 }
 
 #research-wrapper-child02 {
-  background-image: url("images/research2.jpg");
+  background-image: url("images/research2.jpg")
 }
 
 .research-wrapper a:link, .research-wrapper a:visited {
@@ -189,20 +189,18 @@ td {
 #contact-map {
   height: 500px; 
   width: 100%;
-  margin: 20px 0px;
-  object-fit: cover;
-  object-position: 75% 50%;
+  margin: 20px 0px
 }
 
 /* Responsive layouts */
 
 @media screen and (max-width: 1000px) {
   .menu {
-    padding: 0px 10px;
+    padding: 0px 10px
   }
 
   .menu a:link, .menu a:visited {
-    margin: 0 10px;
+    margin: 0 10px
   }
 
   .menu i.fas, .menu i.fab {
@@ -210,7 +208,7 @@ td {
   } 
 
   .menu-hidden {
-    display: none;
+    display: none
   }
 
   .wrapper, .home-wrapper, .footer {
@@ -225,28 +223,28 @@ td {
 
   .research-wrapper {
     flex-direction: column;
-    margin: 25px 0;
+    margin: 25px 0
   }
 
   .research-wrapper-child {
     padding: 25px;
     width: 100%;
-    height: 250px;
+    height: 250px
   }
 
   #contact-map {
     height: 250px;
-    margin: 10px 0px;
+    margin: 10px 0px
   }
 }
 
 @media screen and (max-width: 400px) {
   .menu {
-    padding: 5px;
+    padding: 5px
   }
 
   .menu a:link, .menu a:visited {
-    margin: 0 5px;
+    margin: 0 5px
   }
 
   .wrapper, .home-wrapper, .footer {
@@ -256,10 +254,10 @@ td {
 
 @media screen and (max-width: 335px) {
   .menu {
-    padding: 0px 8px;
+    padding: 0px 8px
   }
 
   .menu a:link, .menu a:visited {
-    margin: 0 2px;
+    margin: 0 2px
   }
 }
