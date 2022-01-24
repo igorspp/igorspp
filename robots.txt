@@ -4,3 +4,5 @@ Allow: /
 Allow: /images/
 
 Disallow: /old_layout/
+
+Sitemap: https://igorpessi.com/sitemap.xml
