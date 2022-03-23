@@ -3,6 +3,6 @@ User-agent: *
 Allow: /
 Allow: /images/
 
-Disallow: /old_layout/
+Disallow: /js/
 
 Sitemap: https://igorpessi.com/sitemap.xml
