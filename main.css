@@ -272,9 +272,9 @@ td {
     padding: 25px 20px
   }
 
-  .menu-wrapper {
+  /* .menu-wrapper {
     position: fixed;
-  }
+  } */
 
   .home-wrapper {
     min-height: 100vh;
