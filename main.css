@@ -161,6 +161,14 @@ td {
   margin: 0
 }
 
+.content-center {
+  text-align: center
+}
+
+.content-center img {
+  max-width: 75%
+}
+
 
 /* Navbar */
 
