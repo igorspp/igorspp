@@ -9,32 +9,52 @@
 
 <url>
   <loc>https://igorpessi.com/</loc>
-  <lastmod>2022-01-24T07:23:16+00:00</lastmod>
+  <lastmod>2022-08-09T07:41:44+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://igorpessi.com/about</loc>
-  <lastmod>2022-01-24T07:23:16+00:00</lastmod>
+  <lastmod>2022-08-09T07:41:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://igorpessi.com/posts</loc>
+  <lastmod>2022-08-09T07:41:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://igorpessi.com/research</loc>
-  <lastmod>2022-01-24T07:23:16+00:00</lastmod>
+  <lastmod>2022-08-09T07:41:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://igorpessi.com/publications</loc>
-  <lastmod>2022-01-24T07:23:16+00:00</lastmod>
+  <lastmod>2022-08-09T07:41:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://igorpessi.com/data</loc>
+  <lastmod>2022-08-09T07:41:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://igorpessi.com/CV</loc>
-  <lastmod>2022-01-24T07:23:16+00:00</lastmod>
+  <lastmod>2022-08-09T07:41:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://igorpessi.com/contact</loc>
-  <lastmod>2022-01-24T07:23:16+00:00</lastmod>
+  <lastmod>2022-08-09T07:41:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://igorpessi.com/2022-08-08-candidatus-nitrosopolaris.html</loc>
+  <lastmod>2022-08-09T07:41:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://igorpessi.com/2022-06-03-accepted-manuscript.html</loc>
+  <lastmod>2022-08-09T07:41:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
